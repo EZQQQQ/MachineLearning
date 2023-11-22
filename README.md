@@ -35,7 +35,7 @@
    - Licensed under MIT License.
    - README.md includes key insights like interpolation vs. extrapolation and limitations of high-degree polynomial regression.
 
-# Project Summary: Linear Regression Analysis for Weather Data
+**Project Summary: Linear Regression Analysis for Weather Data**
 
 ## Code Structure
 
