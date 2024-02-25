@@ -1,107 +1,57 @@
 # MachineLearning
 
 # Assignment 1
-**Project Summary: Polynomial Regression for Function Approximation**
 
-**Objectives:**
+### 2.1 Polynomial Regression 
 
-1. **Estimation of \( \hat{w} \):**
-   - **Objective:** Implement a function to calculate \( \hat{w} \) directly from \( X \), \( y \), and a regularization parameter \( \lambda \).
-   - **Outcome:** Successful implementation, providing the foundation for further analysis.
+- **Objective:** Fit a non-linear function using polynomial regression on the feasible space X = [0, 11].
 
-2. **Solving for \( n = 3 \) and \( \lambda = 0 \):**
-   - **Objective:** Calculate \( \hat{w} \) for a specified polynomial degree (\( n = 3 \)) and regularization parameter (\( \lambda = 0 \)).
-   - **Outcome:** Displayed the estimated function \( \hat{y} = X\hat{w} \) alongside given \( y \) values, offering a visual representation of the model's performance.
+### 2.2 Linear Regression 
 
-3. **Grid Search for Best \( n \) and \( \lambda \):**
-   - **Objective:** Conduct a grid search to identify the optimal combination of polynomial degree (\( n \)) and regularization parameter (\( \lambda \)) minimizing mean squared error (MSE).
-   - **Outcome:** Found the best MSE, providing insights into the impact of different parameters on model accuracy.
+- **Objective:** Predict attributes 24 and 25 using attributes 3-23 through linear regression. Perform repeated trials for evaluation.
 
-4. **3D Visualization of Grid Search Results:**
-   - **Objective:** Display results of the grid search in a 3D plot, illustrating the relationship between polynomial degree, regularization parameter, and MSE.
-   - **Outcome:** Visualized parameter tuning, aiding in the understanding of the trade-offs involved.
+# Assignment 2
 
-5. **Definition of Function \( f \):**
-   - **Objective:** Implement a function \( f(x) \) using obtained \( \hat{w} \) for calculating \( f(x) \) at any given \( x \).
-   - **Outcome:** Established a function for future use in predictions.
+### 2.1 Logistic Regression Implementation: Gradient Descent
 
-6. **Visualizing Results:**
-   - **Objective:** Load points from the ground truth function \( g \) and visualize results for different \( x \) ranges.
-   - **Outcome:** Displayed ground truth \( g(x) \), given data points, and polynomial regression approximation \( f(x) \) in various scenarios.
+- **Objective:** Implement gradient descent for logistic regression, visualize the decision boundary, and submit the modified Jupyter notebook.
 
-**Overall Insights:**
-   - Dependencies include Numpy and Matplotlib.
-   - Instructions provided in a Jupyter Notebook for user interaction.
-   - Licensed under MIT License.
-   - README.md includes key insights like interpolation vs. extrapolation and limitations of high-degree polynomial regression.
+### 2.2 Support Vector Machines Implementations
 
-**Project Summary: Linear Regression Analysis for Weather Data**
+#### Objective:
 
-## Code Structure
+- **Implement SVMs with Different Kernels and Slack Variables:**
+  - Train SVM classifiers for three distinct iris types using scikit-learn package.
+  - Bonus Challenge: Implement SVM from scratch (12 points).
+  - Conduct experiments with different SVM setups:
+    - Calculate errors, weight vector, bias, support vector indices, and slack variables.
+    - Explore linear kernel, varying slack variable C, and different kernel functions.
 
-1. **Data Loading and Preprocessing:**
-   - Dataset, "Regression.csv," is loaded and examined.
-   - Irrelevant columns are removed, and missing values are handled.
+# Assignment 3
 
-2. **Min-Max Scaling:**
-   - Features are scaled using min-max scaling for consistent model input.
+## 2.1 Tree
 
-3. **Gradient Descent Implementation:**
-   - Gradient descent algorithm is implemented for TMax and TMin predictions.
-   - Functions for min-max scaling and gradient descent are included.
+- **Objective:** Practice tree-based methods on the Diabetes dataset.
+  
+  - Preliminary data analysis with visualizations.
+  - Data processing if necessary, with a data splitting ratio of 0.33.
+  - Implement a uni-variate tree method for classification.
+  - Implement an ensemble model for classification (free to choose).
+  - Result visualizations, comments, and optional space-split visualization.
+ 
+## 2.2 Neural Networks
 
-4. **Training and Evaluation:**
-   - Linear regression model is trained and evaluated for TMax and TMin temperatures.
-   - RMSE calculated for training and testing sets.
+- **Objective:** Build fully-connected Neural Network (MLP) and Convolutional Neural Network for digit classification on MNIST dataset.
 
-5. **Hyperparameter Tuning:**
-   - Fine-tuning of hyperparameters (learning rate, iterations) for optimal performance.
-
-6. **Results Visualization:**
-   - Error curves plotted to visualize convergence and performance.
-
-7. **Mean RMSE Calculation:**
-   - Mean RMSE calculated over multiple trials for both TMax and TMin.
-
-## Key Insights
-
-- **Impact of Learning Rate:**
-  - Crucial; finding a balance between fast convergence and avoiding divergence is essential.
-
-- **Impact of Data Preprocessing:**
-  - Careful handling of missing values and normalization significantly influences prediction performance.
-
-- **Impact of Random Initialization:**
-  - Initial random weights can affect convergence speed; multiple runs with different seeds reveal model stability.
-
-- **Impact of Iterations:**
-  - Critical hyperparameter affecting underfitting and overfitting.
-
-## GitHub Usage
-
-1. **Dependencies:**
-   - Ensure dependencies (NumPy, Matplotlib) are installed using:
-     ```
-     !pip install numpy
-     !pip install matplotlib
-     ```
-
-2. **How to Run:**
-   - Open the provided Jupyter Notebook.
-   - Adjust hyperparameters and experiment with different configurations.
-   - Run code cells sequentially for insights into model training and evaluation.
-
-3. **License:**
-   - Open-source under the MIT License.
-
-4. **Contributions:**
-   - Contributions and suggestions welcome; open issues or pull requests.
-
-5. **Acknowledgments:**
-   - Acknowledgments for data sources or related works can be included.
-
-## Impact and Considerations
-
-- Adapt for other datasets and regression tasks.
-- Understanding hyperparameter impact crucial for successful model training.
-- Considerations for data preprocessing and model interpretation highlighted.
+# Assignment 4
+- **Objectives**:
+1. **Clustering:**
+   - Implement K-means and GMMs.
+2. **Metrics:**
+   - Silhouette Coefficient, Rand Index, and NMI.
+3. **Task 2.1:**
+   - Implement algorithms and metrics.
+4. **Task 2.2:**
+   - Plot metrics for various k values.
+   - Choose optimal k for each metric.
+   - Calculate NMI for selected k.
